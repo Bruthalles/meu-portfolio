@@ -1,61 +1,54 @@
-html{
+html {
     color: #fff;
+    scroll-behavior: smooth;
 
 }
 
-body{
+body {
     background-color: #282828;
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
     max-width: 50%;
 }
 
-.cabecalho{
-    background-color: green;
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 15px;
 }
 
-.cabecalho .logo{
-    background-color: orange;
-    width: 65px; 
+.cabecalho .logo {
+    width: 65px;
     height: 65px;
     border-radius: 50%;
     border: 2px solid white;
     text-decoration: underline;
     text-align: center;
     line-height: 55px;
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     transition: 0.2s;
 }
 
-.cabecalho a:hover .logo{
+.cabecalho a:hover .logo {
     color: #9443d8;
     border: 2px solid #9443d8;
 }
 
-.cabecalho .menu ul{
-    background-color: red;
-
-}
-
-.cabecalho .menu li a{
+.cabecalho .menu li a {
     font-size: 20px;
     text-transform: capitalize;
     padding: 10px 20px;
     transition: 0.2s;
 }
 
-.cabecalho .menu li a:hover{
+.cabecalho .menu li a:hover {
     background-color: #9443d8;
     color: white;
     border-radius: 50px;
 }
 
-.home{
-    background-color: blue;
+.home {
     display: flex;
     min-height: calc(100vh - 125px);
     align-items: center;
@@ -63,9 +56,8 @@ body{
     justify-content: space-between;
 }
 
-.home .informacoes{
-    background-color: black;
-    display:flex;
+.home .informacoes {
+    display: flex;
     flex-direction: column;
     gap: 15px;
     letter-spacing: 2px;
@@ -73,25 +65,24 @@ body{
     max-width: 50%;
 }
 
-.home .informacoes h1{
-    font-family: "Raleway",sans-serif;
+.home .informacoes h1 {
+    font-family: "Raleway", sans-serif;
     font-size: 45px;
     margin-bottom: 25px;
 }
 
-.home .informacoes p{
-    font-family: "Raleway",sans-serif;
+.home .informacoes p {
+    font-family: "Raleway", sans-serif;
     font-size: 24px;
     margin-bottom: 25px;
 }
 
-.home .redes-sociais{
-    background-color: grey;
+.home .redes-sociais {
     display: flex;
     gap: 30px;
 }
 
-.home .redes-sociais a i{
+.home .redes-sociais a i {
     border: 1px solid white;
     border-radius: 50%;
     width: 50px;
@@ -102,34 +93,32 @@ body{
     transition: 0.3s;
 }
 
-.home .redes-sociais a i:hover{
+.home .redes-sociais a i:hover {
     color: #9443d8;
     border: 1px solid #9443d8;
     transform: scale(1.1);
 }
 
-.home .container-foto .foto{
-    background-color: red;
+.home .container-foto .foto {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
 }
 
-.home .container-foto img{
+.home .container-foto img {
     width: 100%;
     border-radius: 50%;
 }
 
-.home .foto.sombra-interna{
-    background:linear-gradient(to right, #8a35c8,#18c063,#00eea2);
+.home .foto.sombra-interna {
+    background: linear-gradient(to right, #8a35c8, #18c063, #00eea2);
 }
 
-.projetos{
-    background-color: purple;
+.projetos {
     padding: 70px 0 70px;
 }
 
-.projetos .titulo{
+.projetos .titulo {
     text-align: center;
     padding: 60px 0;
     font-size: 45px;
@@ -137,9 +126,81 @@ body{
     text-transform: uppercase;
 }
 
-.projetos .container-projetos{
-    background-color: lightblue;
+.projetos .container-projetos {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.projetos .projeto {
+    max-width: 260px;
+    max-width: 500px;
+    margin-bottom: 50px;
+    position: relative;
+    display: none;
+}
+
+.projetos .projeto.ativo{
+    display: block;
+}
+
+.projetos .projeto img{
+    height: 100%;
+}
+
+.projetos .projeto h3{
+    background-color: #040203;
+    width: 100%;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    position: absolute;
+    bottom: 0;
+}
+
+.projetos .projeto .informacoes-project{
+    background-color: #040203;
+    position: absolute;
+    top: 0;
+    font-size: 40px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    opacity: 0;
+    transition: 0.5;
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-project{
+    opacity: 0.7;
+    background-color: #000;
+}
+
+.projetos .btn-mostrar-mais{
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    width: 180px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projetos .btn-mostrar-mais:hover{
+    background-color:#9443d8 ;
+    transition: 0.3s;
+
+}
+
+.projetos .btn-mostrar-mais.remover{
+    display: none;
 }
