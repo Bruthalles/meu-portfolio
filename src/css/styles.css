@@ -1,11 +1,10 @@
 html {
     color: #fff;
     scroll-behavior: smooth;
-
 }
 
 body {
-    background-color: #282828;
+    background: linear-gradient(150deg,#000,#0411cc);
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
     max-width: 50%;
@@ -31,8 +30,8 @@ body {
 }
 
 .cabecalho a:hover .logo {
-    color: #9443d8;
-    border: 2px solid #9443d8;
+    color: #017a2c;
+    border: 2px solid #017a2c;
 }
 
 .cabecalho .menu li a {
@@ -43,7 +42,7 @@ body {
 }
 
 .cabecalho .menu li a:hover {
-    background-color: #9443d8;
+    background-color: #017a2c;
     color: white;
     border-radius: 50px;
 }
@@ -94,8 +93,8 @@ body {
 }
 
 .home .redes-sociais a i:hover {
-    color: #9443d8;
-    border: 1px solid #9443d8;
+    color: #017a2c;
+    border: 1px solid #017a2c;
     transform: scale(1.1);
 }
 
@@ -178,6 +177,7 @@ body {
 
 .projetos .container-projetos .projeto:hover .informacoes-project{
     opacity: 0.7;
+    transition: 0.3s;
     background-color: #000;
 }
 
@@ -198,7 +198,7 @@ body {
 }
 
 .projetos .btn-mostrar-mais:hover{
-    background-color:#9443d8 ;
+    background-color:#017a2c ;
     transition: 0.3s;
 
 }
